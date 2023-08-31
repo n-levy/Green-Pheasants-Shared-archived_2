@@ -15,7 +15,6 @@ Install and import the packages for the testing script
 
 import requests
 import os
-print("hi")
 
 """
 Define functions for downloading the scripts and sample datasets from Github and saving them in the local environment
@@ -55,13 +54,13 @@ Download the files from Github
 ### Download the scripts
 if __name__ == '__main__':
     files_to_download = [
-        ('https://raw.githubusercontent.com/n-levy/Green-Pheasants-Shared/main/configuration.py', './downloaded_scripts/configuration.py'),
-        ('https://raw.githubusercontent.com/n-levy/Green-Pheasants-Shared/main/functions.py', './downloaded_scripts/functions.py'),
-        ('https://raw.githubusercontent.com/n-levy/Green-Pheasants-Shared/main/train_visitors.py', './downloaded_scripts/train_visitors.py'),
-        ('https://raw.githubusercontent.com/n-levy/Green-Pheasants-Shared/main/train_users.py', './downloaded_scripts/train_users.py'),
-        ('https://raw.githubusercontent.com/n-levy/Green-Pheasants-Shared/main/choose_item_online_visitor.py', './downloaded_scripts/choose_item_online_visitor.py'),
-        ('https://raw.githubusercontent.com/n-levy/Green-Pheasants-Shared/main/choose_item_online_user.py', './downloaded_scripts/choose_item_online_user.py'),
-        ('https://raw.githubusercontent.com/n-levy/Green-Pheasants-Shared/main/choose_items_many_offline_users.py', './downloaded_scripts/choose_items_many_offline_users.py')
+        ('https://raw.githubusercontent.com/n-levy/Green-Pheasants-Shared/main/scripts/configuration.py', './downloaded_scripts/configuration.py'),
+        ('https://raw.githubusercontent.com/n-levy/Green-Pheasants-Shared/main/scripts/functions.py', './downloaded_scripts/functions.py'),
+        ('https://raw.githubusercontent.com/n-levy/Green-Pheasants-Shared/main/scripts/train_visitors.py', './downloaded_scripts/train_visitors.py'),
+        ('https://raw.githubusercontent.com/n-levy/Green-Pheasants-Shared/main/scripts/train_users.py', './downloaded_scripts/train_users.py'),
+        ('https://raw.githubusercontent.com/n-levy/Green-Pheasants-Shared/main/scripts/choose_item_online_visitor.py', './downloaded_scripts/choose_item_online_visitor.py'),
+        ('https://raw.githubusercontent.com/n-levy/Green-Pheasants-Shared/main/scripts/choose_item_online_user.py', './downloaded_scripts/choose_item_online_user.py'),
+        ('https://raw.githubusercontent.com/n-levy/Green-Pheasants-Shared/main/scripts/choose_items_many_offline_users.py', './downloaded_scripts/choose_items_many_offline_users.py')
     ]
 
     download_multiple_files(files_to_download)
@@ -69,9 +68,9 @@ if __name__ == '__main__':
 ### Download the sample dataframes
 if __name__ == '__main__':
     files_to_download = [
-        ('https://raw.githubusercontent.com/n-levy/Green-Pheasants-Shared/main/users.py', './example_data/users.py'),
-        ('https://raw.githubusercontent.com/n-levy/Green-Pheasants-Shared/main/items.py', './example_data/items.py'),
-        ('https://raw.githubusercontent.com/n-levy/Green-Pheasants-Shared/main/interactions.py', './example_data/interactions.py')
+        ('https://github.com/n-levy/Green-Pheasants-Shared/blob/main/example_data/df_users.pkl', './example_data/users.pkl'),
+        ('https://github.com/n-levy/Green-Pheasants-Shared/blob/main/example_data/df_users.pkl', './example_data/items.pkl'),
+        ('https://github.com/n-levy/Green-Pheasants-Shared/blob/main/example_data/df_users.pkl', './example_data/interactions.pkl')
     ]
 
     download_multiple_files(files_to_download)
